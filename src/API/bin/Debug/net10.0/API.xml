@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>API</name>
+    </assembly>
+    <members>
+        <member name="T:ProductAPI.API.Controllers.v1.AuthController">
+            <summary>Authentication endpoints for registration, login, and token management.</summary>
+        </member>
+        <member name="M:ProductAPI.API.Controllers.v1.AuthController.Register(ProductAPI.Application.DTOs.Auth.RegisterRequestDto,System.Threading.CancellationToken)">
+            <summary>Register a new user account.</summary>
+        </member>
+        <member name="M:ProductAPI.API.Controllers.v1.AuthController.Login(ProductAPI.Application.DTOs.Auth.LoginRequestDto,System.Threading.CancellationToken)">
+            <summary>Login and receive an access token and refresh token.</summary>
+        </member>
+        <member name="M:ProductAPI.API.Controllers.v1.AuthController.RefreshToken(ProductAPI.Application.DTOs.Auth.RefreshTokenRequestDto,System.Threading.CancellationToken)">
+            <summary>Exchange a valid refresh token for a new access token.</summary>
+        </member>
+        <member name="M:ProductAPI.API.Controllers.v1.AuthController.RevokeToken(ProductAPI.Application.DTOs.Auth.RefreshTokenRequestDto,System.Threading.CancellationToken)">
+            <summary>Revoke a refresh token (logout).</summary>
+        </member>
+        <member name="T:ProductAPI.API.Controllers.v1.ProductsController">
+            <summary>CRUD operations for Products and their related Items.</summary>
+        </member>
+        <member name="M:ProductAPI.API.Controllers.v1.ProductsController.GetAll(System.Int32,System.Int32,System.Threading.CancellationToken)">
+            <summary>Get a paginated list of all products.</summary>
+            <param name="pageNumber">Page number (default: 1)</param>
+            <param name="pageSize">Items per page (default: 10, max: 100)</param>
+        </member>
+        <member name="M:ProductAPI.API.Controllers.v1.ProductsController.GetById(System.Int32,System.Threading.CancellationToken)">
+            <summary>Get a specific product by its ID.</summary>
+        </member>
+        <member name="M:ProductAPI.API.Controllers.v1.ProductsController.Create(ProductAPI.Application.DTOs.Products.CreateProductDto,System.Threading.CancellationToken)">
+            <summary>Create a new product. Items can be included optionally.</summary>
+        </member>
+        <member name="M:ProductAPI.API.Controllers.v1.ProductsController.Update(System.Int32,ProductAPI.Application.DTOs.Products.UpdateProductDto,System.Threading.CancellationToken)">
+            <summary>Update an existing product's name.</summary>
+        </member>
+        <member name="M:ProductAPI.API.Controllers.v1.ProductsController.Delete(System.Int32,System.Threading.CancellationToken)">
+            <summary>Delete a product and all its associated items.</summary>
+        </member>
+        <member name="M:ProductAPI.API.Controllers.v1.ProductsController.GetItems(System.Int32,System.Threading.CancellationToken)">
+            <summary>Get all items belonging to a specific product.</summary>
+        </member>
+    </members>
+</doc>

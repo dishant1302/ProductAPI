@@ -1,0 +1,1204 @@
+2026-05-18 17:01:26.595 +05:30 [INF] Executed DbCommand (114ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2026-05-18 17:01:26.843 +05:30 [INF] Executed DbCommand (59ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2026-05-18 17:01:26.850 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2026-05-18 17:01:26.859 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2026-05-18 17:01:27.007 +05:30 [INF] Executed DbCommand (101ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2026-05-18 17:01:27.100 +05:30 [INF] No migrations were applied. The database is already up to date.
+2026-05-18 17:01:27.104 +05:30 [INF] Database migration applied successfully.
+2026-05-18 17:01:27.185 +05:30 [INF] ProductAPI starting up on Development
+2026-05-18 17:01:27.265 +05:30 [INF] User profile is available. Using 'C:\Users\DISHANT\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-05-18 17:01:28.114 +05:30 [ERR] Hosting failed to start
+System.IO.IOException: Failed to bind to address http://127.0.0.1:5172: address already in use.
+ ---> Microsoft.AspNetCore.Connections.AddressInUseException: Only one usage of each socket address (protocol/network address/port) is normally permitted.
+ ---> System.Net.Sockets.SocketException (10048): Only one usage of each socket address (protocol/network address/port) is normally permitted.
+   at System.Net.Sockets.Socket.UpdateStatusAfterSocketErrorAndThrowException(SocketError error, Boolean disconnectOnFailure, String callerName)
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions.CreateDefaultBoundListenSocket(EndPoint endpoint)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass28_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__14_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2026-05-18 17:01:28.403 +05:30 [FTL] Application terminated unexpectedly.
+System.IO.IOException: Failed to bind to address http://127.0.0.1:5172: address already in use.
+ ---> Microsoft.AspNetCore.Connections.AddressInUseException: Only one usage of each socket address (protocol/network address/port) is normally permitted.
+ ---> System.Net.Sockets.SocketException (10048): Only one usage of each socket address (protocol/network address/port) is normally permitted.
+   at System.Net.Sockets.Socket.UpdateStatusAfterSocketErrorAndThrowException(SocketError error, Boolean disconnectOnFailure, String callerName)
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions.CreateDefaultBoundListenSocket(EndPoint endpoint)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass28_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__14_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Program.<Main>$(String[] args) in C:\Users\DISHANT\Downloads\Root\ProductAPI\src\API\Program.cs:line 127
+2026-05-18 17:02:20.967 +05:30 [INF] Executed DbCommand (67ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2026-05-18 17:02:21.224 +05:30 [INF] Executed DbCommand (97ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2026-05-18 17:02:21.231 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2026-05-18 17:02:21.234 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2026-05-18 17:02:21.263 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2026-05-18 17:02:21.303 +05:30 [INF] No migrations were applied. The database is already up to date.
+2026-05-18 17:02:21.305 +05:30 [INF] Database migration applied successfully.
+2026-05-18 17:02:21.323 +05:30 [INF] ProductAPI starting up on Development
+2026-05-18 17:02:21.398 +05:30 [INF] User profile is available. Using 'C:\Users\DISHANT\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-05-18 17:02:21.948 +05:30 [ERR] Hosting failed to start
+System.IO.IOException: Failed to bind to address http://127.0.0.1:5172: address already in use.
+ ---> Microsoft.AspNetCore.Connections.AddressInUseException: Only one usage of each socket address (protocol/network address/port) is normally permitted.
+ ---> System.Net.Sockets.SocketException (10048): Only one usage of each socket address (protocol/network address/port) is normally permitted.
+   at System.Net.Sockets.Socket.UpdateStatusAfterSocketErrorAndThrowException(SocketError error, Boolean disconnectOnFailure, String callerName)
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions.CreateDefaultBoundListenSocket(EndPoint endpoint)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass28_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__14_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2026-05-18 17:02:22.071 +05:30 [FTL] Application terminated unexpectedly.
+System.IO.IOException: Failed to bind to address http://127.0.0.1:5172: address already in use.
+ ---> Microsoft.AspNetCore.Connections.AddressInUseException: Only one usage of each socket address (protocol/network address/port) is normally permitted.
+ ---> System.Net.Sockets.SocketException (10048): Only one usage of each socket address (protocol/network address/port) is normally permitted.
+   at System.Net.Sockets.Socket.UpdateStatusAfterSocketErrorAndThrowException(SocketError error, Boolean disconnectOnFailure, String callerName)
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions.CreateDefaultBoundListenSocket(EndPoint endpoint)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass28_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__14_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Program.<Main>$(String[] args) in C:\Users\DISHANT\Downloads\Root\ProductAPI\src\API\Program.cs:line 127
+2026-05-18 17:04:21.422 +05:30 [FTL] Application terminated unexpectedly.
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in C:\Users\DISHANT\Downloads\Root\ProductAPI\src\API\Program.cs:line 91
+2026-05-18 17:04:40.392 +05:30 [INF] Executed DbCommand (92ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2026-05-18 17:04:40.633 +05:30 [INF] Executed DbCommand (83ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2026-05-18 17:04:40.668 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2026-05-18 17:04:40.689 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2026-05-18 17:04:40.738 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2026-05-18 17:04:40.783 +05:30 [INF] No migrations were applied. The database is already up to date.
+2026-05-18 17:04:40.787 +05:30 [INF] Database migration applied successfully.
+2026-05-18 17:04:40.806 +05:30 [INF] ProductAPI starting up on Development
+2026-05-18 17:04:40.856 +05:30 [INF] User profile is available. Using 'C:\Users\DISHANT\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-05-18 17:04:41.053 +05:30 [INF] Now listening on: http://localhost:5172
+2026-05-18 17:04:41.071 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-18 17:04:41.080 +05:30 [INF] Hosting environment: Development
+2026-05-18 17:04:41.085 +05:30 [INF] Content root path: C:\Users\DISHANT\Downloads\Root\ProductAPI\src\API
+2026-05-18 17:05:21.788 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5172/index.html - null null
+2026-05-18 17:05:22.144 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5172/index.html - 200 null text/html;charset=utf-8 357.7119ms
+2026-05-18 17:05:22.287 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5172/index.js - null null
+2026-05-18 17:05:22.314 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5172/index.js - 200 null application/javascript;charset=utf-8 27.4873ms
+2026-05-18 17:05:22.616 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5172/swagger/v1/swagger.json - null null
+2026-05-18 17:05:23.032 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5172/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 423.4086ms
+2026-05-18 17:06:00.378 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5172/api/v1/auth/register - application/json 93
+2026-05-18 17:06:00.430 +05:30 [WRN] Failed to determine the https port for redirect.
+2026-05-18 17:06:00.434 +05:30 [INF] CORS policy execution successful.
+2026-05-18 17:06:00.495 +05:30 [INF] Executing endpoint 'ProductAPI.API.Controllers.v1.AuthController.Register (API)'
+2026-05-18 17:06:00.552 +05:30 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(ProductAPI.Application.DTOs.Auth.RegisterRequestDto, System.Threading.CancellationToken) on controller ProductAPI.API.Controllers.v1.AuthController (API).
+2026-05-18 17:06:00.725 +05:30 [INF] Registration attempt for jane@test.com
+2026-05-18 17:06:01.448 +05:30 [ERR] Failed executing DbCommand (40ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2026-05-18 17:06:01.491 +05:30 [ERR] An exception occurred while iterating over the results of a query for context type 'ProductAPI.Infrastructure.Data.ApplicationDbContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'AspNetUsers'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.<>c__DisplayClass30_0`2.<<ExecuteAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:229fd8be-ac36-45db-ae82-28e745b4a2a9
+Error Number:208,State:1,Class:16
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'AspNetUsers'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.<>c__DisplayClass30_0`2.<<ExecuteAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:229fd8be-ac36-45db-ae82-28e745b4a2a9
+Error Number:208,State:1,Class:16
+2026-05-18 17:06:01.527 +05:30 [INF] Executed action ProductAPI.API.Controllers.v1.AuthController.Register (API) in 964.9189ms
+2026-05-18 17:06:01.534 +05:30 [INF] Executed endpoint 'ProductAPI.API.Controllers.v1.AuthController.Register (API)'
+2026-05-18 17:06:01.542 +05:30 [ERR] HTTP POST /api/v1/auth/register responded 500 in 1114.8451 ms
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'AspNetUsers'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.<>c__DisplayClass30_0`2.<<ExecuteAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Identity.UserManager`1.FindByEmailAsync(String email)
+   at ProductAPI.Infrastructure.Identity.AuthService.RegisterAsync(RegisterRequestDto dto, CancellationToken cancellationToken) in C:\Users\DISHANT\Downloads\Root\ProductAPI\src\Infrastructure\Identity\AuthService.cs:line 29
+   at ProductAPI.API.Controllers.v1.AuthController.Register(RegisterRequestDto dto, CancellationToken cancellationToken) in C:\Users\DISHANT\Downloads\Root\ProductAPI\src\API\Controllers\v1\AuthController.cs:line 36
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.ResponseCompression.ResponseCompressionMiddleware.InvokeCore(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+ClientConnectionId:229fd8be-ac36-45db-ae82-28e745b4a2a9
+Error Number:208,State:1,Class:16
+2026-05-18 17:06:01.613 +05:30 [ERR] An unexpected error occurred processing /api/v1/auth/register
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'AspNetUsers'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.<>c__DisplayClass30_0`2.<<ExecuteAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Identity.UserManager`1.FindByEmailAsync(String email)
+   at ProductAPI.Infrastructure.Identity.AuthService.RegisterAsync(RegisterRequestDto dto, CancellationToken cancellationToken) in C:\Users\DISHANT\Downloads\Root\ProductAPI\src\Infrastructure\Identity\AuthService.cs:line 29
+   at ProductAPI.API.Controllers.v1.AuthController.Register(RegisterRequestDto dto, CancellationToken cancellationToken) in C:\Users\DISHANT\Downloads\Root\ProductAPI\src\API\Controllers\v1\AuthController.cs:line 36
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.ResponseCompression.ResponseCompressionMiddleware.InvokeCore(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at ProductAPI.API.Middleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context) in C:\Users\DISHANT\Downloads\Root\ProductAPI\src\API\Middleware\ErrorHandlingMiddleware.cs:line 22
+ClientConnectionId:229fd8be-ac36-45db-ae82-28e745b4a2a9
+Error Number:208,State:1,Class:16
+2026-05-18 17:06:01.664 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5172/api/v1/auth/register - 500 null application/json; charset=utf-8 1286.0955ms
+2026-05-18 17:08:47.585 +05:30 [INF] Application is shutting down...
+2026-05-18 17:09:06.918 +05:30 [FTL] Application terminated unexpectedly.
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in C:\Users\DISHANT\Downloads\Root\ProductAPI\src\API\Program.cs:line 91
+2026-05-18 17:10:01.603 +05:30 [FTL] Application terminated unexpectedly.
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in C:\Users\DISHANT\Downloads\Root\ProductAPI\src\API\Program.cs:line 91
+2026-05-18 17:11:08.257 +05:30 [FTL] Application terminated unexpectedly.
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in C:\Users\DISHANT\Downloads\Root\ProductAPI\src\API\Program.cs:line 91
+2026-05-18 17:15:26.225 +05:30 [INF] Executed DbCommand (68ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2026-05-18 17:15:26.404 +05:30 [INF] Executed DbCommand (65ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2026-05-18 17:15:26.420 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2026-05-18 17:15:26.435 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2026-05-18 17:15:26.484 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2026-05-18 17:15:26.516 +05:30 [INF] No migrations were applied. The database is already up to date.
+2026-05-18 17:15:26.521 +05:30 [INF] Database migration applied successfully.
+2026-05-18 17:15:26.533 +05:30 [INF] ProductAPI starting up on Development
+2026-05-18 17:15:26.560 +05:30 [INF] User profile is available. Using 'C:\Users\DISHANT\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-05-18 17:15:26.733 +05:30 [INF] Now listening on: http://localhost:5172
+2026-05-18 17:15:26.746 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-18 17:15:26.750 +05:30 [INF] Hosting environment: Development
+2026-05-18 17:15:26.753 +05:30 [INF] Content root path: C:\Users\DISHANT\Downloads\Root\ProductAPI\src\API
+2026-05-18 17:16:00.389 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5172/index.html - null null
+2026-05-18 17:16:00.755 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5172/index.html - 200 null text/html;charset=utf-8 366.5777ms
+2026-05-18 17:16:00.899 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5172/index.js - null null
+2026-05-18 17:16:00.908 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5172/index.js - 200 null application/javascript;charset=utf-8 8.4424ms
+2026-05-18 17:16:01.072 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5172/swagger/v1/swagger.json - null null
+2026-05-18 17:16:01.479 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5172/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 407.3874ms
+2026-05-18 17:16:22.788 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5172/api/v1/auth/register - application/json 93
+2026-05-18 17:16:22.849 +05:30 [WRN] Failed to determine the https port for redirect.
+2026-05-18 17:16:22.853 +05:30 [INF] CORS policy execution successful.
+2026-05-18 17:16:22.906 +05:30 [INF] Executing endpoint 'ProductAPI.API.Controllers.v1.AuthController.Register (API)'
+2026-05-18 17:16:22.971 +05:30 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(ProductAPI.Application.DTOs.Auth.RegisterRequestDto, System.Threading.CancellationToken) on controller ProductAPI.API.Controllers.v1.AuthController (API).
+2026-05-18 17:16:23.148 +05:30 [INF] Registration attempt for jane@test.com
+2026-05-18 17:16:23.969 +05:30 [INF] Executed DbCommand (125ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2026-05-18 17:16:24.239 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2026-05-18 17:16:24.260 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2026-05-18 17:16:24.736 +05:30 [INF] Executed DbCommand (57ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (DbType = Int32), @p2='?' (Size = 4000), @p3='?' (Size = 256), @p4='?' (DbType = Boolean), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTimeOffset), @p9='?' (Size = 256), @p10='?' (Size = 256), @p11='?' (Size = 4000), @p12='?' (Size = 4000), @p13='?' (DbType = Boolean), @p14='?' (Size = 4000), @p15='?' (DbType = Boolean), @p16='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [AspNetUsers] ([Id], [AccessFailedCount], [ConcurrencyStamp], [Email], [EmailConfirmed], [FirstName], [LastName], [LockoutEnabled], [LockoutEnd], [NormalizedEmail], [NormalizedUserName], [PasswordHash], [PhoneNumber], [PhoneNumberConfirmed], [SecurityStamp], [TwoFactorEnabled], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16);
+2026-05-18 17:16:24.996 +05:30 [INF] Executed DbCommand (35ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Boolean), @p3='?' (Size = 512), @p4='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [RefreshTokens] ([CreatedAt], [ExpiresAt], [IsRevoked], [Token], [UserId])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2026-05-18 17:16:25.046 +05:30 [INF] Executing CreatedAtActionResult, writing value of type 'ProductAPI.Application.Common.ApiResponse`1[[ProductAPI.Application.DTOs.Auth.AuthResponseDto, Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-18 17:16:25.148 +05:30 [INF] Executed action ProductAPI.API.Controllers.v1.AuthController.Register (API) in 2157.4831ms
+2026-05-18 17:16:25.156 +05:30 [INF] Executed endpoint 'ProductAPI.API.Controllers.v1.AuthController.Register (API)'
+2026-05-18 17:16:25.175 +05:30 [INF] HTTP POST /api/v1/auth/register responded 201 in 2324.6566 ms
+2026-05-18 17:16:25.203 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5172/api/v1/auth/register - 201 null application/json; charset=utf-8 2414.5373ms
+2026-05-18 17:18:29.120 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5172/api/v1/products - application/json 62
+2026-05-18 17:18:29.169 +05:30 [INF] CORS policy execution successful.
+2026-05-18 17:18:29.188 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-05-18 17:18:29.204 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2026-05-18 17:18:29.207 +05:30 [INF] HTTP POST /api/v1/products responded 401 in 39.5459 ms
+2026-05-18 17:18:29.219 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5172/api/v1/products - 401 0 null 98.3249ms
+2026-05-18 17:20:03.616 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5172/api/v1/products?pageNumber=1&pageSize=10 - null null
+2026-05-18 17:20:03.642 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-05-18 17:20:03.649 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2026-05-18 17:20:03.653 +05:30 [INF] HTTP GET /api/v1/products responded 401 in 17.9472 ms
+2026-05-18 17:20:03.658 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5172/api/v1/products?pageNumber=1&pageSize=10 - 401 0 null 41.7603ms
+2026-05-18 17:20:56.418 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5172/api/v1/products - application/json 64
+2026-05-18 17:20:56.424 +05:30 [INF] CORS policy execution successful.
+2026-05-18 17:20:56.433 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-05-18 17:20:56.437 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2026-05-18 17:20:56.440 +05:30 [INF] HTTP POST /api/v1/products responded 401 in 16.0045 ms
+2026-05-18 17:20:56.449 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5172/api/v1/products - 401 0 null 31.2141ms
+2026-05-18 17:21:14.114 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5172/api/v1/products - application/json 62
+2026-05-18 17:21:14.172 +05:30 [INF] CORS policy execution successful.
+2026-05-18 17:21:14.181 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-05-18 17:21:14.189 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2026-05-18 17:21:14.193 +05:30 [INF] HTTP POST /api/v1/products responded 401 in 21.4490 ms
+2026-05-18 17:21:14.202 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5172/api/v1/products - 401 0 null 88.5202ms
+2026-05-18 17:22:27.773 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5172/api/v1/products - application/json 62
+2026-05-18 17:22:27.787 +05:30 [INF] CORS policy execution successful.
+2026-05-18 17:22:27.791 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-05-18 17:22:27.802 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2026-05-18 17:22:27.806 +05:30 [INF] HTTP POST /api/v1/products responded 401 in 19.4652 ms
+2026-05-18 17:22:27.816 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5172/api/v1/products - 401 0 null 42.5756ms
+2026-05-18 17:22:59.129 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5172/api/v1/products?pageNumber=1&pageSize=10 - null null
+2026-05-18 17:22:59.184 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-05-18 17:22:59.190 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2026-05-18 17:22:59.199 +05:30 [INF] HTTP GET /api/v1/products responded 401 in 14.8003 ms
+2026-05-18 17:22:59.205 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5172/api/v1/products?pageNumber=1&pageSize=10 - 401 0 null 76.0094ms
+2026-05-18 17:23:25.943 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5172/api/v1/products - application/json 62
+2026-05-18 17:23:25.964 +05:30 [INF] CORS policy execution successful.
+2026-05-18 17:23:25.967 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-05-18 17:23:25.972 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2026-05-18 17:23:25.973 +05:30 [INF] HTTP POST /api/v1/products responded 401 in 9.3369 ms
+2026-05-18 17:23:25.975 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5172/api/v1/products - 401 0 null 32.7682ms
+2026-05-18 17:23:29.927 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5172/api/v1/products - application/json 62
+2026-05-18 17:23:29.951 +05:30 [INF] CORS policy execution successful.
+2026-05-18 17:23:29.964 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-05-18 17:23:29.969 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2026-05-18 17:23:29.972 +05:30 [INF] HTTP POST /api/v1/products responded 401 in 21.9686 ms
+2026-05-18 17:23:29.977 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5172/api/v1/products - 401 0 null 49.898ms
+2026-05-18 17:23:35.054 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5172/api/v1/products?pageNumber=1&pageSize=10 - null null
+2026-05-18 17:23:35.067 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-05-18 17:23:35.073 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2026-05-18 17:23:35.080 +05:30 [INF] HTTP GET /api/v1/products responded 401 in 13.0884 ms
+2026-05-18 17:23:35.086 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5172/api/v1/products?pageNumber=1&pageSize=10 - 401 0 null 31.6684ms
+2026-05-18 17:24:51.204 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5172/api/v1/auth/register - application/json 102
+2026-05-18 17:24:51.216 +05:30 [INF] CORS policy execution successful.
+2026-05-18 17:24:51.220 +05:30 [INF] Executing endpoint 'ProductAPI.API.Controllers.v1.AuthController.Register (API)'
+2026-05-18 17:24:51.266 +05:30 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(ProductAPI.Application.DTOs.Auth.RegisterRequestDto, System.Threading.CancellationToken) on controller ProductAPI.API.Controllers.v1.AuthController (API).
+2026-05-18 17:24:51.286 +05:30 [INF] Registration attempt for john@test.com
+2026-05-18 17:24:51.532 +05:30 [INF] Executed DbCommand (33ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2026-05-18 17:24:51.718 +05:30 [INF] Executed DbCommand (43ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2026-05-18 17:24:51.732 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2026-05-18 17:24:51.748 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (DbType = Int32), @p2='?' (Size = 4000), @p3='?' (Size = 256), @p4='?' (DbType = Boolean), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTimeOffset), @p9='?' (Size = 256), @p10='?' (Size = 256), @p11='?' (Size = 4000), @p12='?' (Size = 4000), @p13='?' (DbType = Boolean), @p14='?' (Size = 4000), @p15='?' (DbType = Boolean), @p16='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [AspNetUsers] ([Id], [AccessFailedCount], [ConcurrencyStamp], [Email], [EmailConfirmed], [FirstName], [LastName], [LockoutEnabled], [LockoutEnd], [NormalizedEmail], [NormalizedUserName], [PasswordHash], [PhoneNumber], [PhoneNumberConfirmed], [SecurityStamp], [TwoFactorEnabled], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16);
+2026-05-18 17:24:51.770 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Boolean), @p3='?' (Size = 512), @p4='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [RefreshTokens] ([CreatedAt], [ExpiresAt], [IsRevoked], [Token], [UserId])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2026-05-18 17:24:51.783 +05:30 [INF] Executing CreatedAtActionResult, writing value of type 'ProductAPI.Application.Common.ApiResponse`1[[ProductAPI.Application.DTOs.Auth.AuthResponseDto, Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-18 17:24:51.796 +05:30 [INF] Executed action ProductAPI.API.Controllers.v1.AuthController.Register (API) in 520.532ms
+2026-05-18 17:24:51.802 +05:30 [INF] Executed endpoint 'ProductAPI.API.Controllers.v1.AuthController.Register (API)'
+2026-05-18 17:24:51.807 +05:30 [INF] HTTP POST /api/v1/auth/register responded 201 in 591.1599 ms
+2026-05-18 17:24:51.819 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5172/api/v1/auth/register - 201 null application/json; charset=utf-8 614.9437ms
+2026-05-18 17:25:57.257 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5172/api/v1/products - application/json 99
+2026-05-18 17:25:57.269 +05:30 [INF] CORS policy execution successful.
+2026-05-18 17:25:57.317 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-05-18 17:25:57.320 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2026-05-18 17:25:57.323 +05:30 [INF] HTTP POST /api/v1/products responded 401 in 54.5237 ms
+2026-05-18 17:25:57.332 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5172/api/v1/products - 401 0 null 75.0066ms
+2026-05-18 17:27:02.343 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5172/api/v1/auth/login - application/json 58
+2026-05-18 17:27:02.352 +05:30 [INF] CORS policy execution successful.
+2026-05-18 17:27:02.359 +05:30 [INF] Executing endpoint 'ProductAPI.API.Controllers.v1.AuthController.Login (API)'
+2026-05-18 17:27:02.384 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(ProductAPI.Application.DTOs.Auth.LoginRequestDto, System.Threading.CancellationToken) on controller ProductAPI.API.Controllers.v1.AuthController (API).
+2026-05-18 17:27:02.419 +05:30 [INF] Login attempt for john@test.com
+2026-05-18 17:27:02.437 +05:30 [INF] Executed DbCommand (10ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2026-05-18 17:27:02.662 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Boolean), @p3='?' (Size = 512), @p4='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [RefreshTokens] ([CreatedAt], [ExpiresAt], [IsRevoked], [Token], [UserId])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2026-05-18 17:27:02.673 +05:30 [INF] Executing OkObjectResult, writing value of type 'ProductAPI.Application.Common.ApiResponse`1[[ProductAPI.Application.DTOs.Auth.AuthResponseDto, Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-18 17:27:02.680 +05:30 [INF] Executed action ProductAPI.API.Controllers.v1.AuthController.Login (API) in 291.722ms
+2026-05-18 17:27:02.687 +05:30 [INF] Executed endpoint 'ProductAPI.API.Controllers.v1.AuthController.Login (API)'
+2026-05-18 17:27:02.690 +05:30 [INF] HTTP POST /api/v1/auth/login responded 200 in 337.6306 ms
+2026-05-18 17:27:02.697 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5172/api/v1/auth/login - 200 null application/json; charset=utf-8 354.3011ms
+2026-05-18 17:28:19.649 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5172/api/v1/products - application/json 99
+2026-05-18 17:28:19.665 +05:30 [INF] CORS policy execution successful.
+2026-05-18 17:28:19.668 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-05-18 17:28:19.672 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2026-05-18 17:28:19.682 +05:30 [INF] HTTP POST /api/v1/products responded 401 in 17.8908 ms
+2026-05-18 17:28:19.688 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5172/api/v1/products - 401 0 null 39.6037ms
+2026-05-18 17:29:37.512 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5172/api/v1/products - application/json 99
+2026-05-18 17:29:37.524 +05:30 [INF] CORS policy execution successful.
+2026-05-18 17:29:37.526 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-05-18 17:29:37.527 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2026-05-18 17:29:37.536 +05:30 [INF] HTTP POST /api/v1/products responded 401 in 12.0279 ms
+2026-05-18 17:29:37.551 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5172/api/v1/products - 401 0 null 39.8613ms
+2026-05-18 17:30:10.524 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5172/api/v1/products?pageNumber=1&pageSize=10 - null null
+2026-05-18 17:30:10.537 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-05-18 17:30:10.576 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2026-05-18 17:30:10.581 +05:30 [INF] HTTP GET /api/v1/products responded 401 in 45.0623 ms
+2026-05-18 17:30:10.587 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5172/api/v1/products?pageNumber=1&pageSize=10 - 401 0 null 62.3717ms
+2026-05-18 17:30:27.183 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5172/api/v1/products - application/json 99
+2026-05-18 17:30:27.196 +05:30 [INF] CORS policy execution successful.
+2026-05-18 17:30:27.199 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-05-18 17:30:27.203 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2026-05-18 17:30:27.207 +05:30 [INF] HTTP POST /api/v1/products responded 401 in 11.2673 ms
+2026-05-18 17:30:27.220 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5172/api/v1/products - 401 0 null 36.4505ms
+2026-05-18 17:32:05.859 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5172/index.html - null null
+2026-05-18 17:32:05.883 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5172/index.html - 200 null text/html;charset=utf-8 23.5925ms
+2026-05-18 17:32:05.941 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5172/index.js - null null
+2026-05-18 17:32:05.954 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5172/index.js - 200 null application/javascript;charset=utf-8 13.378ms
+2026-05-18 17:32:06.059 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5172/swagger/v1/swagger.json - null null
+2026-05-18 17:32:06.154 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5172/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 94.9366ms
+2026-05-18 17:32:17.968 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5172/api/v1/auth/login - application/json 58
+2026-05-18 17:32:17.981 +05:30 [INF] CORS policy execution successful.
+2026-05-18 17:32:17.987 +05:30 [INF] Executing endpoint 'ProductAPI.API.Controllers.v1.AuthController.Login (API)'
+2026-05-18 17:32:17.991 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(ProductAPI.Application.DTOs.Auth.LoginRequestDto, System.Threading.CancellationToken) on controller ProductAPI.API.Controllers.v1.AuthController (API).
+2026-05-18 17:32:18.007 +05:30 [INF] Login attempt for john@test.com
+2026-05-18 17:32:18.044 +05:30 [INF] Executed DbCommand (20ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2026-05-18 17:32:18.239 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Boolean), @p3='?' (Size = 512), @p4='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [RefreshTokens] ([CreatedAt], [ExpiresAt], [IsRevoked], [Token], [UserId])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2026-05-18 17:32:18.249 +05:30 [INF] Executing OkObjectResult, writing value of type 'ProductAPI.Application.Common.ApiResponse`1[[ProductAPI.Application.DTOs.Auth.AuthResponseDto, Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-18 17:32:18.254 +05:30 [INF] Executed action ProductAPI.API.Controllers.v1.AuthController.Login (API) in 249.698ms
+2026-05-18 17:32:18.258 +05:30 [INF] Executed endpoint 'ProductAPI.API.Controllers.v1.AuthController.Login (API)'
+2026-05-18 17:32:18.263 +05:30 [INF] HTTP POST /api/v1/auth/login responded 200 in 282.0808 ms
+2026-05-18 17:32:18.273 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5172/api/v1/auth/login - 200 null application/json; charset=utf-8 304.5587ms
+2026-05-18 17:35:03.507 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5172/api/v1/products - application/json 74
+2026-05-18 17:35:03.568 +05:30 [INF] CORS policy execution successful.
+2026-05-18 17:35:03.649 +05:30 [INF] Executing endpoint 'ProductAPI.API.Controllers.v1.ProductsController.Create (API)'
+2026-05-18 17:35:03.664 +05:30 [INF] Route matched with {action = "Create", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(ProductAPI.Application.DTOs.Products.CreateProductDto, System.Threading.CancellationToken) on controller ProductAPI.API.Controllers.v1.ProductsController (API).
+2026-05-18 17:35:03.910 +05:30 [INF] Creating product 'Widget Pro' by john@test.com
+2026-05-18 17:35:04.198 +05:30 [INF] Executed DbCommand (13ms) [Parameters=[@p0='?' (Size = 100), @p1='?' (DbType = DateTime2), @p2='?' (Size = 100), @p3='?' (DbType = DateTime2), @p4='?' (Size = 255)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Product] ([CreatedBy], [CreatedOn], [ModifiedBy], [ModifiedOn], [ProductName])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2026-05-18 17:35:04.223 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[@p5='?' (DbType = Int32), @p6='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Item] ([ProductId], [Quantity])
+OUTPUT INSERTED.[Id]
+VALUES (@p5, @p6);
+2026-05-18 17:35:04.261 +05:30 [INF] Executing CreatedAtActionResult, writing value of type 'ProductAPI.Application.Common.ApiResponse`1[[ProductAPI.Application.DTOs.Products.ProductDto, Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-18 17:35:04.287 +05:30 [INF] Executed action ProductAPI.API.Controllers.v1.ProductsController.Create (API) in 621.4047ms
+2026-05-18 17:35:04.289 +05:30 [INF] Executed endpoint 'ProductAPI.API.Controllers.v1.ProductsController.Create (API)'
+2026-05-18 17:35:04.290 +05:30 [INF] HTTP POST /api/v1/products responded 201 in 722.3365 ms
+2026-05-18 17:35:04.292 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5172/api/v1/products - 201 null application/json; charset=utf-8 785.3396ms
+2026-05-18 17:35:17.214 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5172/api/v1/products?pageNumber=1&pageSize=10 - null null
+2026-05-18 17:35:17.223 +05:30 [INF] Executing endpoint 'ProductAPI.API.Controllers.v1.ProductsController.GetAll (API)'
+2026-05-18 17:35:17.240 +05:30 [INF] Route matched with {action = "GetAll", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(Int32, Int32, System.Threading.CancellationToken) on controller ProductAPI.API.Controllers.v1.ProductsController (API).
+2026-05-18 17:35:17.253 +05:30 [INF] Fetching products page 1 size 10
+2026-05-18 17:35:17.471 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Product] AS [p]
+2026-05-18 17:35:17.698 +05:30 [INF] Executed DbCommand (48ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedBy], [t].[CreatedOn], [t].[ModifiedBy], [t].[ModifiedOn], [t].[ProductName], [i].[Id], [i].[ProductId], [i].[Quantity]
+FROM (
+    SELECT [p].[Id], [p].[CreatedBy], [p].[CreatedOn], [p].[ModifiedBy], [p].[ModifiedOn], [p].[ProductName]
+    FROM [Product] AS [p]
+    ORDER BY [p].[CreatedOn] DESC
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+LEFT JOIN [Item] AS [i] ON [t].[Id] = [i].[ProductId]
+ORDER BY [t].[CreatedOn] DESC, [t].[Id]
+2026-05-18 17:35:17.760 +05:30 [INF] Executing OkObjectResult, writing value of type 'ProductAPI.Application.Common.ApiResponse`1[[ProductAPI.Application.Common.PagedResult`1[[ProductAPI.Application.DTOs.Products.ProductDto, Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-18 17:35:17.779 +05:30 [INF] Executed action ProductAPI.API.Controllers.v1.ProductsController.GetAll (API) in 537.8074ms
+2026-05-18 17:35:17.782 +05:30 [INF] Executed endpoint 'ProductAPI.API.Controllers.v1.ProductsController.GetAll (API)'
+2026-05-18 17:35:17.783 +05:30 [INF] HTTP GET /api/v1/products responded 200 in 561.1014 ms
+2026-05-18 17:35:17.786 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5172/api/v1/products?pageNumber=1&pageSize=10 - 200 null application/json; charset=utf-8 571.1543ms
+2026-05-18 17:55:21.502 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5172/index.html - null null
+2026-05-18 17:55:21.539 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5172/index.html - 200 null text/html;charset=utf-8 44.9718ms
+2026-05-18 17:55:21.669 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5172/index.js - null null
+2026-05-18 17:55:21.759 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5172/index.js - 200 null application/javascript;charset=utf-8 90.055ms
+2026-05-18 17:55:21.927 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5172/swagger/v1/swagger.json - null null
+2026-05-18 17:55:22.078 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5172/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 151.8205ms
+2026-05-18 17:56:39.224 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5172/index.html - null null
+2026-05-18 17:56:39.270 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5172/index.html - 200 null text/html;charset=utf-8 45.9649ms
+2026-05-18 17:56:39.344 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5172/swagger-ui.css - null null
+2026-05-18 17:56:39.368 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5172/index.css - null null
+2026-05-18 17:56:39.369 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5172/swagger-ui-standalone-preset.js - null null
+2026-05-18 17:56:39.370 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5172/swagger-ui-bundle.js - null null
+2026-05-18 17:56:39.515 +05:30 [INF] Sending file. Request path: '/index.css'. Physical path: 'N/A'
+2026-05-18 17:56:39.529 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5172/index.css - 200 202 text/css 160.4472ms
+2026-05-18 17:56:39.543 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5172/index.js - null null
+2026-05-18 17:56:39.556 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5172/index.js - 200 null application/javascript;charset=utf-8 13.1737ms
+2026-05-18 17:56:39.607 +05:30 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2026-05-18 17:56:39.607 +05:30 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2026-05-18 17:56:39.618 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5172/swagger-ui.css - 200 152034 text/css 274.1335ms
+2026-05-18 17:56:39.622 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5172/swagger-ui-standalone-preset.js - 200 230293 text/javascript 253.3118ms
+2026-05-18 17:56:39.672 +05:30 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2026-05-18 17:56:39.676 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5172/swagger-ui-bundle.js - 200 1452753 text/javascript 305.7708ms
+2026-05-18 17:56:40.026 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5172/swagger/v1/swagger.json - null null
+2026-05-18 17:56:40.085 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5172/favicon-32x32.png - null null
+2026-05-18 17:56:40.105 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5172/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 78.879ms
+2026-05-18 17:56:40.111 +05:30 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2026-05-18 17:56:40.142 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5172/favicon-32x32.png - 200 628 image/png 56.5484ms
+2026-05-18 17:57:43.542 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5172/api/v1/auth/register - application/json 129
+2026-05-18 17:57:43.605 +05:30 [INF] CORS policy execution successful.
+2026-05-18 17:57:43.619 +05:30 [INF] Executing endpoint 'ProductAPI.API.Controllers.v1.AuthController.Register (API)'
+2026-05-18 17:57:43.629 +05:30 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(ProductAPI.Application.DTOs.Auth.RegisterRequestDto, System.Threading.CancellationToken) on controller ProductAPI.API.Controllers.v1.AuthController (API).
+2026-05-18 17:57:43.746 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'ProductAPI.Application.Common.ApiResponse`1[[System.Object, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-18 17:57:43.777 +05:30 [INF] Executed action ProductAPI.API.Controllers.v1.AuthController.Register (API) in 139.516ms
+2026-05-18 17:57:43.784 +05:30 [INF] Executed endpoint 'ProductAPI.API.Controllers.v1.AuthController.Register (API)'
+2026-05-18 17:57:43.789 +05:30 [INF] HTTP POST /api/v1/auth/register responded 400 in 186.5383 ms
+2026-05-18 17:57:43.793 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5172/api/v1/auth/register - 400 null application/json; charset=utf-8 251.6097ms
+2026-05-18 17:58:19.571 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5172/api/v1/auth/register - application/json 133
+2026-05-18 17:58:19.574 +05:30 [INF] CORS policy execution successful.
+2026-05-18 17:58:19.575 +05:30 [INF] Executing endpoint 'ProductAPI.API.Controllers.v1.AuthController.Register (API)'
+2026-05-18 17:58:19.576 +05:30 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(ProductAPI.Application.DTOs.Auth.RegisterRequestDto, System.Threading.CancellationToken) on controller ProductAPI.API.Controllers.v1.AuthController (API).
+2026-05-18 17:58:19.579 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'ProductAPI.Application.Common.ApiResponse`1[[System.Object, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-18 17:58:19.582 +05:30 [INF] Executed action ProductAPI.API.Controllers.v1.AuthController.Register (API) in 4.1179ms
+2026-05-18 17:58:19.585 +05:30 [INF] Executed endpoint 'ProductAPI.API.Controllers.v1.AuthController.Register (API)'
+2026-05-18 17:58:19.585 +05:30 [INF] HTTP POST /api/v1/auth/register responded 400 in 11.0683 ms
+2026-05-18 17:58:19.587 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5172/api/v1/auth/register - 400 null application/json; charset=utf-8 15.6353ms
+2026-05-18 17:59:13.072 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5172/api/v1/auth/register - application/json 131
+2026-05-18 17:59:13.084 +05:30 [INF] CORS policy execution successful.
+2026-05-18 17:59:13.088 +05:30 [INF] Executing endpoint 'ProductAPI.API.Controllers.v1.AuthController.Register (API)'
+2026-05-18 17:59:13.091 +05:30 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(ProductAPI.Application.DTOs.Auth.RegisterRequestDto, System.Threading.CancellationToken) on controller ProductAPI.API.Controllers.v1.AuthController (API).
+2026-05-18 17:59:13.100 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'ProductAPI.Application.Common.ApiResponse`1[[System.Object, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-18 17:59:13.105 +05:30 [INF] Executed action ProductAPI.API.Controllers.v1.AuthController.Register (API) in 6.5147ms
+2026-05-18 17:59:13.113 +05:30 [INF] Executed endpoint 'ProductAPI.API.Controllers.v1.AuthController.Register (API)'
+2026-05-18 17:59:13.121 +05:30 [INF] HTTP POST /api/v1/auth/register responded 400 in 36.9667 ms
+2026-05-18 17:59:13.124 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5172/api/v1/auth/register - 400 null application/json; charset=utf-8 52.1357ms
+2026-05-18 18:00:39.952 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5172/api/v1/auth/register - application/json 114
+2026-05-18 18:00:39.990 +05:30 [INF] CORS policy execution successful.
+2026-05-18 18:00:40.002 +05:30 [INF] Executing endpoint 'ProductAPI.API.Controllers.v1.AuthController.Register (API)'
+2026-05-18 18:00:40.006 +05:30 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(ProductAPI.Application.DTOs.Auth.RegisterRequestDto, System.Threading.CancellationToken) on controller ProductAPI.API.Controllers.v1.AuthController (API).
+2026-05-18 18:00:40.034 +05:30 [INF] Registration attempt for rahul.sharma@test.com
+2026-05-18 18:00:40.229 +05:30 [INF] Executed DbCommand (115ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2026-05-18 18:00:40.442 +05:30 [INF] Executed DbCommand (29ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2026-05-18 18:00:40.476 +05:30 [INF] Executed DbCommand (8ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2026-05-18 18:00:40.577 +05:30 [INF] Executed DbCommand (51ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (DbType = Int32), @p2='?' (Size = 4000), @p3='?' (Size = 256), @p4='?' (DbType = Boolean), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTimeOffset), @p9='?' (Size = 256), @p10='?' (Size = 256), @p11='?' (Size = 4000), @p12='?' (Size = 4000), @p13='?' (DbType = Boolean), @p14='?' (Size = 4000), @p15='?' (DbType = Boolean), @p16='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [AspNetUsers] ([Id], [AccessFailedCount], [ConcurrencyStamp], [Email], [EmailConfirmed], [FirstName], [LastName], [LockoutEnabled], [LockoutEnd], [NormalizedEmail], [NormalizedUserName], [PasswordHash], [PhoneNumber], [PhoneNumberConfirmed], [SecurityStamp], [TwoFactorEnabled], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16);
+2026-05-18 18:00:40.628 +05:30 [INF] Executed DbCommand (29ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Boolean), @p3='?' (Size = 512), @p4='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [RefreshTokens] ([CreatedAt], [ExpiresAt], [IsRevoked], [Token], [UserId])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2026-05-18 18:00:40.633 +05:30 [INF] Executing CreatedAtActionResult, writing value of type 'ProductAPI.Application.Common.ApiResponse`1[[ProductAPI.Application.DTOs.Auth.AuthResponseDto, Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-18 18:00:40.642 +05:30 [INF] Executed action ProductAPI.API.Controllers.v1.AuthController.Register (API) in 630.2778ms
+2026-05-18 18:00:40.647 +05:30 [INF] Executed endpoint 'ProductAPI.API.Controllers.v1.AuthController.Register (API)'
+2026-05-18 18:00:40.651 +05:30 [INF] HTTP POST /api/v1/auth/register responded 201 in 660.9734 ms
+2026-05-18 18:00:40.660 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5172/api/v1/auth/register - 201 null application/json; charset=utf-8 707.8447ms
+2026-05-18 18:01:11.710 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5172/api/v1/auth/register - application/json 114
+2026-05-18 18:01:11.753 +05:30 [INF] CORS policy execution successful.
+2026-05-18 18:01:11.754 +05:30 [INF] Executing endpoint 'ProductAPI.API.Controllers.v1.AuthController.Register (API)'
+2026-05-18 18:01:11.755 +05:30 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(ProductAPI.Application.DTOs.Auth.RegisterRequestDto, System.Threading.CancellationToken) on controller ProductAPI.API.Controllers.v1.AuthController (API).
+2026-05-18 18:01:11.758 +05:30 [INF] Registration attempt for rahul.sharma@test.com
+2026-05-18 18:01:11.784 +05:30 [INF] Executed DbCommand (21ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2026-05-18 18:01:11.798 +05:30 [INF] Executed action ProductAPI.API.Controllers.v1.AuthController.Register (API) in 41.8411ms
+2026-05-18 18:01:11.802 +05:30 [INF] Executed endpoint 'ProductAPI.API.Controllers.v1.AuthController.Register (API)'
+2026-05-18 18:01:11.812 +05:30 [ERR] HTTP POST /api/v1/auth/register responded 500 in 58.4504 ms
+ProductAPI.Domain.Exceptions.BadRequestException: A user with this email already exists.
+   at ProductAPI.Infrastructure.Identity.AuthService.RegisterAsync(RegisterRequestDto dto, CancellationToken cancellationToken) in C:\Users\DISHANT\Downloads\Root\ProductAPI\src\Infrastructure\Identity\AuthService.cs:line 31
+   at ProductAPI.API.Controllers.v1.AuthController.Register(RegisterRequestDto dto, CancellationToken cancellationToken) in C:\Users\DISHANT\Downloads\Root\ProductAPI\src\API\Controllers\v1\AuthController.cs:line 36
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.ResponseCompression.ResponseCompressionMiddleware.InvokeCore(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-05-18 18:01:12.741 +05:30 [WRN] Bad request: A user with this email already exists.
+2026-05-18 18:01:12.770 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5172/api/v1/auth/register - 400 null application/json; charset=utf-8 1059.4916ms
+2026-05-18 18:01:37.448 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5172/api/v1/auth/register - application/json 112
+2026-05-18 18:01:37.469 +05:30 [INF] CORS policy execution successful.
+2026-05-18 18:01:37.477 +05:30 [INF] Executing endpoint 'ProductAPI.API.Controllers.v1.AuthController.Register (API)'
+2026-05-18 18:01:37.485 +05:30 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(ProductAPI.Application.DTOs.Auth.RegisterRequestDto, System.Threading.CancellationToken) on controller ProductAPI.API.Controllers.v1.AuthController (API).
+2026-05-18 18:01:37.490 +05:30 [INF] Registration attempt for priya.patel@test.com
+2026-05-18 18:01:37.505 +05:30 [INF] Executed DbCommand (12ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2026-05-18 18:01:37.649 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2026-05-18 18:01:37.659 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2026-05-18 18:01:37.681 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (DbType = Int32), @p2='?' (Size = 4000), @p3='?' (Size = 256), @p4='?' (DbType = Boolean), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTimeOffset), @p9='?' (Size = 256), @p10='?' (Size = 256), @p11='?' (Size = 4000), @p12='?' (Size = 4000), @p13='?' (DbType = Boolean), @p14='?' (Size = 4000), @p15='?' (DbType = Boolean), @p16='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [AspNetUsers] ([Id], [AccessFailedCount], [ConcurrencyStamp], [Email], [EmailConfirmed], [FirstName], [LastName], [LockoutEnabled], [LockoutEnd], [NormalizedEmail], [NormalizedUserName], [PasswordHash], [PhoneNumber], [PhoneNumberConfirmed], [SecurityStamp], [TwoFactorEnabled], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16);
+2026-05-18 18:01:37.699 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Boolean), @p3='?' (Size = 512), @p4='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [RefreshTokens] ([CreatedAt], [ExpiresAt], [IsRevoked], [Token], [UserId])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2026-05-18 18:01:37.708 +05:30 [INF] Executing CreatedAtActionResult, writing value of type 'ProductAPI.Application.Common.ApiResponse`1[[ProductAPI.Application.DTOs.Auth.AuthResponseDto, Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-18 18:01:37.715 +05:30 [INF] Executed action ProductAPI.API.Controllers.v1.AuthController.Register (API) in 227.7178ms
+2026-05-18 18:01:37.721 +05:30 [INF] Executed endpoint 'ProductAPI.API.Controllers.v1.AuthController.Register (API)'
+2026-05-18 18:01:37.722 +05:30 [INF] HTTP POST /api/v1/auth/register responded 201 in 252.9867 ms
+2026-05-18 18:01:37.725 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5172/api/v1/auth/register - 201 null application/json; charset=utf-8 276.9998ms
+2026-05-18 18:03:31.369 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5172/api/v1/auth/login - application/json 65
+2026-05-18 18:03:31.386 +05:30 [INF] CORS policy execution successful.
+2026-05-18 18:03:31.400 +05:30 [INF] Executing endpoint 'ProductAPI.API.Controllers.v1.AuthController.Login (API)'
+2026-05-18 18:03:31.409 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(ProductAPI.Application.DTOs.Auth.LoginRequestDto, System.Threading.CancellationToken) on controller ProductAPI.API.Controllers.v1.AuthController (API).
+2026-05-18 18:03:31.421 +05:30 [INF] Login attempt for priya.patel@test.com
+2026-05-18 18:03:31.449 +05:30 [INF] Executed DbCommand (22ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2026-05-18 18:03:31.619 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Boolean), @p3='?' (Size = 512), @p4='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [RefreshTokens] ([CreatedAt], [ExpiresAt], [IsRevoked], [Token], [UserId])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2026-05-18 18:03:31.626 +05:30 [INF] Executing OkObjectResult, writing value of type 'ProductAPI.Application.Common.ApiResponse`1[[ProductAPI.Application.DTOs.Auth.AuthResponseDto, Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-18 18:03:31.636 +05:30 [INF] Executed action ProductAPI.API.Controllers.v1.AuthController.Login (API) in 223.3527ms
+2026-05-18 18:03:31.639 +05:30 [INF] Executed endpoint 'ProductAPI.API.Controllers.v1.AuthController.Login (API)'
+2026-05-18 18:03:31.643 +05:30 [INF] HTTP POST /api/v1/auth/login responded 200 in 257.0174 ms
+2026-05-18 18:03:31.648 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5172/api/v1/auth/login - 200 null application/json; charset=utf-8 279.3535ms
+2026-05-18 18:05:28.393 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5172/api/v1/products - application/json 89
+2026-05-18 18:05:28.406 +05:30 [INF] CORS policy execution successful.
+2026-05-18 18:05:28.419 +05:30 [INF] Executing endpoint 'ProductAPI.API.Controllers.v1.ProductsController.Create (API)'
+2026-05-18 18:05:28.422 +05:30 [INF] Route matched with {action = "Create", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(ProductAPI.Application.DTOs.Products.CreateProductDto, System.Threading.CancellationToken) on controller ProductAPI.API.Controllers.v1.ProductsController (API).
+2026-05-18 18:05:28.445 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'ProductAPI.Application.Common.ApiResponse`1[[System.Object, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-18 18:05:28.451 +05:30 [INF] Executed action ProductAPI.API.Controllers.v1.ProductsController.Create (API) in 22.9941ms
+2026-05-18 18:05:28.456 +05:30 [INF] Executed endpoint 'ProductAPI.API.Controllers.v1.ProductsController.Create (API)'
+2026-05-18 18:05:28.459 +05:30 [INF] HTTP POST /api/v1/products responded 400 in 53.7549 ms
+2026-05-18 18:05:28.468 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5172/api/v1/products - 400 null application/json; charset=utf-8 74.7479ms
+2026-05-18 18:05:44.235 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5172/api/v1/products - application/json 89
+2026-05-18 18:05:44.253 +05:30 [INF] CORS policy execution successful.
+2026-05-18 18:05:44.260 +05:30 [INF] Executing endpoint 'ProductAPI.API.Controllers.v1.ProductsController.Create (API)'
+2026-05-18 18:05:44.266 +05:30 [INF] Route matched with {action = "Create", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(ProductAPI.Application.DTOs.Products.CreateProductDto, System.Threading.CancellationToken) on controller ProductAPI.API.Controllers.v1.ProductsController (API).
+2026-05-18 18:05:44.294 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'ProductAPI.Application.Common.ApiResponse`1[[System.Object, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-18 18:05:44.298 +05:30 [INF] Executed action ProductAPI.API.Controllers.v1.ProductsController.Create (API) in 11.8391ms
+2026-05-18 18:05:44.305 +05:30 [INF] Executed endpoint 'ProductAPI.API.Controllers.v1.ProductsController.Create (API)'
+2026-05-18 18:05:44.309 +05:30 [INF] HTTP POST /api/v1/products responded 400 in 55.6343 ms
+2026-05-18 18:05:44.317 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5172/api/v1/products - 400 null application/json; charset=utf-8 82.2544ms
+2026-05-18 18:06:14.797 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5172/api/v1/products - application/json 89
+2026-05-18 18:06:14.804 +05:30 [INF] CORS policy execution successful.
+2026-05-18 18:06:14.806 +05:30 [INF] Executing endpoint 'ProductAPI.API.Controllers.v1.ProductsController.Create (API)'
+2026-05-18 18:06:14.807 +05:30 [INF] Route matched with {action = "Create", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(ProductAPI.Application.DTOs.Products.CreateProductDto, System.Threading.CancellationToken) on controller ProductAPI.API.Controllers.v1.ProductsController (API).
+2026-05-18 18:06:14.811 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'ProductAPI.Application.Common.ApiResponse`1[[System.Object, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-18 18:06:14.814 +05:30 [INF] Executed action ProductAPI.API.Controllers.v1.ProductsController.Create (API) in 4.5327ms
+2026-05-18 18:06:14.817 +05:30 [INF] Executed endpoint 'ProductAPI.API.Controllers.v1.ProductsController.Create (API)'
+2026-05-18 18:06:14.818 +05:30 [INF] HTTP POST /api/v1/products responded 400 in 14.4193 ms
+2026-05-18 18:06:14.820 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5172/api/v1/products - 400 null application/json; charset=utf-8 23.6731ms
+2026-05-18 18:06:25.979 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5172/api/v1/auth/login - application/json 65
+2026-05-18 18:06:25.989 +05:30 [INF] CORS policy execution successful.
+2026-05-18 18:06:25.996 +05:30 [INF] Executing endpoint 'ProductAPI.API.Controllers.v1.AuthController.Login (API)'
+2026-05-18 18:06:26.001 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(ProductAPI.Application.DTOs.Auth.LoginRequestDto, System.Threading.CancellationToken) on controller ProductAPI.API.Controllers.v1.AuthController (API).
+2026-05-18 18:06:26.012 +05:30 [INF] Login attempt for priya.patel@test.com
+2026-05-18 18:06:26.038 +05:30 [INF] Executed DbCommand (21ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2026-05-18 18:06:26.171 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Boolean), @p3='?' (Size = 512), @p4='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [RefreshTokens] ([CreatedAt], [ExpiresAt], [IsRevoked], [Token], [UserId])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2026-05-18 18:06:26.180 +05:30 [INF] Executing OkObjectResult, writing value of type 'ProductAPI.Application.Common.ApiResponse`1[[ProductAPI.Application.DTOs.Auth.AuthResponseDto, Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-18 18:06:26.186 +05:30 [INF] Executed action ProductAPI.API.Controllers.v1.AuthController.Login (API) in 176.1983ms
+2026-05-18 18:06:26.191 +05:30 [INF] Executed endpoint 'ProductAPI.API.Controllers.v1.AuthController.Login (API)'
+2026-05-18 18:06:26.196 +05:30 [INF] HTTP POST /api/v1/auth/login responded 200 in 206.9378 ms
+2026-05-18 18:06:26.203 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5172/api/v1/auth/login - 200 null application/json; charset=utf-8 223.9942ms
+2026-05-18 18:07:07.845 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5172/api/v1/products - application/json 89
+2026-05-18 18:07:07.861 +05:30 [INF] CORS policy execution successful.
+2026-05-18 18:07:07.863 +05:30 [INF] Executing endpoint 'ProductAPI.API.Controllers.v1.ProductsController.Create (API)'
+2026-05-18 18:07:07.867 +05:30 [INF] Route matched with {action = "Create", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(ProductAPI.Application.DTOs.Products.CreateProductDto, System.Threading.CancellationToken) on controller ProductAPI.API.Controllers.v1.ProductsController (API).
+2026-05-18 18:07:07.872 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'ProductAPI.Application.Common.ApiResponse`1[[System.Object, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-18 18:07:07.874 +05:30 [INF] Executed action ProductAPI.API.Controllers.v1.ProductsController.Create (API) in 4.7836ms
+2026-05-18 18:07:07.877 +05:30 [INF] Executed endpoint 'ProductAPI.API.Controllers.v1.ProductsController.Create (API)'
+2026-05-18 18:07:07.878 +05:30 [INF] HTTP POST /api/v1/products responded 400 in 16.8351 ms
+2026-05-18 18:07:07.880 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5172/api/v1/products - 400 null application/json; charset=utf-8 34.9937ms
+2026-05-18 18:07:21.090 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5172/api/v1/products - application/json 89
+2026-05-18 18:07:21.110 +05:30 [INF] CORS policy execution successful.
+2026-05-18 18:07:21.121 +05:30 [INF] Executing endpoint 'ProductAPI.API.Controllers.v1.ProductsController.Create (API)'
+2026-05-18 18:07:21.138 +05:30 [INF] Route matched with {action = "Create", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(ProductAPI.Application.DTOs.Products.CreateProductDto, System.Threading.CancellationToken) on controller ProductAPI.API.Controllers.v1.ProductsController (API).
+2026-05-18 18:07:21.153 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'ProductAPI.Application.Common.ApiResponse`1[[System.Object, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-18 18:07:21.160 +05:30 [INF] Executed action ProductAPI.API.Controllers.v1.ProductsController.Create (API) in 12.8948ms
+2026-05-18 18:07:21.170 +05:30 [INF] Executed endpoint 'ProductAPI.API.Controllers.v1.ProductsController.Create (API)'
+2026-05-18 18:07:21.175 +05:30 [INF] HTTP POST /api/v1/products responded 400 in 65.5610 ms
+2026-05-18 18:07:21.185 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5172/api/v1/products - 400 null application/json; charset=utf-8 95.2158ms
+2026-05-18 18:07:50.145 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5172/index.html - null null
+2026-05-18 18:07:50.172 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5172/index.html - 200 null text/html;charset=utf-8 26.7963ms
+2026-05-18 18:07:50.229 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5172/index.js - null null
+2026-05-18 18:07:50.234 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5172/index.js - 200 null application/javascript;charset=utf-8 4.8917ms
+2026-05-18 18:07:50.661 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5172/swagger/v1/swagger.json - null null
+2026-05-18 18:07:50.787 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5172/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 126.1791ms
+2026-05-18 18:08:03.635 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5172/api/v1/products?pageNumber=1&pageSize=10 - null null
+2026-05-18 18:08:03.650 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-05-18 18:08:03.653 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2026-05-18 18:08:03.654 +05:30 [INF] HTTP GET /api/v1/products responded 401 in 4.5072 ms
+2026-05-18 18:08:03.657 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5172/api/v1/products?pageNumber=1&pageSize=10 - 401 0 null 22.2661ms
+2026-05-18 18:08:39.301 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5172/api/v1/auth/login - application/json 82
+2026-05-18 18:08:39.311 +05:30 [INF] CORS policy execution successful.
+2026-05-18 18:08:39.342 +05:30 [INF] Executing endpoint 'ProductAPI.API.Controllers.v1.AuthController.Login (API)'
+2026-05-18 18:08:39.351 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(ProductAPI.Application.DTOs.Auth.LoginRequestDto, System.Threading.CancellationToken) on controller ProductAPI.API.Controllers.v1.AuthController (API).
+2026-05-18 18:08:39.359 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'ProductAPI.Application.Common.ApiResponse`1[[System.Object, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-18 18:08:39.363 +05:30 [INF] Executed action ProductAPI.API.Controllers.v1.AuthController.Login (API) in 6.0664ms
+2026-05-18 18:08:39.371 +05:30 [INF] Executed endpoint 'ProductAPI.API.Controllers.v1.AuthController.Login (API)'
+2026-05-18 18:08:39.372 +05:30 [INF] HTTP POST /api/v1/auth/login responded 400 in 60.8494 ms
+2026-05-18 18:08:39.374 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5172/api/v1/auth/login - 400 null application/json; charset=utf-8 72.824ms
+2026-05-18 18:09:11.479 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5172/api/v1/auth/register - application/json 129
+2026-05-18 18:09:11.535 +05:30 [INF] CORS policy execution successful.
+2026-05-18 18:09:11.540 +05:30 [INF] Executing endpoint 'ProductAPI.API.Controllers.v1.AuthController.Register (API)'
+2026-05-18 18:09:11.545 +05:30 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(ProductAPI.Application.DTOs.Auth.RegisterRequestDto, System.Threading.CancellationToken) on controller ProductAPI.API.Controllers.v1.AuthController (API).
+2026-05-18 18:09:11.560 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'ProductAPI.Application.Common.ApiResponse`1[[System.Object, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-18 18:09:11.567 +05:30 [INF] Executed action ProductAPI.API.Controllers.v1.AuthController.Register (API) in 10.05ms
+2026-05-18 18:09:11.572 +05:30 [INF] Executed endpoint 'ProductAPI.API.Controllers.v1.AuthController.Register (API)'
+2026-05-18 18:09:11.575 +05:30 [INF] HTTP POST /api/v1/auth/register responded 400 in 40.2348 ms
+2026-05-18 18:09:11.578 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5172/api/v1/auth/register - 400 null application/json; charset=utf-8 99.5253ms
+2026-05-18 18:10:13.909 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5172/api/v1/auth/register - application/json 129
+2026-05-18 18:10:13.980 +05:30 [INF] CORS policy execution successful.
+2026-05-18 18:10:13.993 +05:30 [INF] Executing endpoint 'ProductAPI.API.Controllers.v1.AuthController.Register (API)'
+2026-05-18 18:10:14.003 +05:30 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(ProductAPI.Application.DTOs.Auth.RegisterRequestDto, System.Threading.CancellationToken) on controller ProductAPI.API.Controllers.v1.AuthController (API).
+2026-05-18 18:10:14.024 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'ProductAPI.Application.Common.ApiResponse`1[[System.Object, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-18 18:10:14.038 +05:30 [INF] Executed action ProductAPI.API.Controllers.v1.AuthController.Register (API) in 24.3846ms
+2026-05-18 18:10:14.046 +05:30 [INF] Executed endpoint 'ProductAPI.API.Controllers.v1.AuthController.Register (API)'
+2026-05-18 18:10:14.060 +05:30 [INF] HTTP POST /api/v1/auth/register responded 400 in 80.1211 ms
+2026-05-18 18:10:14.079 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5172/api/v1/auth/register - 400 null application/json; charset=utf-8 169.3956ms
+2026-05-18 18:10:25.001 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5172/api/v1/auth/login - application/json 59
+2026-05-18 18:10:25.011 +05:30 [INF] CORS policy execution successful.
+2026-05-18 18:10:25.018 +05:30 [INF] Executing endpoint 'ProductAPI.API.Controllers.v1.AuthController.Login (API)'
+2026-05-18 18:10:25.022 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(ProductAPI.Application.DTOs.Auth.LoginRequestDto, System.Threading.CancellationToken) on controller ProductAPI.API.Controllers.v1.AuthController (API).
+2026-05-18 18:10:25.035 +05:30 [INF] Login attempt for john@test.com
+2026-05-18 18:10:25.068 +05:30 [INF] Executed DbCommand (8ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2026-05-18 18:10:25.435 +05:30 [INF] Executed DbCommand (20ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Boolean), @p3='?' (Size = 512), @p4='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [RefreshTokens] ([CreatedAt], [ExpiresAt], [IsRevoked], [Token], [UserId])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2026-05-18 18:10:25.474 +05:30 [INF] Executing OkObjectResult, writing value of type 'ProductAPI.Application.Common.ApiResponse`1[[ProductAPI.Application.DTOs.Auth.AuthResponseDto, Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-18 18:10:25.496 +05:30 [INF] Executed action ProductAPI.API.Controllers.v1.AuthController.Login (API) in 464.112ms
+2026-05-18 18:10:25.509 +05:30 [INF] Executed endpoint 'ProductAPI.API.Controllers.v1.AuthController.Login (API)'
+2026-05-18 18:10:25.528 +05:30 [INF] HTTP POST /api/v1/auth/login responded 200 in 517.1818 ms
+2026-05-18 18:10:25.546 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5172/api/v1/auth/login - 200 null application/json; charset=utf-8 544.1615ms
+2026-05-18 18:10:50.648 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5172/api/v1/products?pageNumber=1&pageSize=10 - null null
+2026-05-18 18:10:50.688 +05:30 [INF] Executing endpoint 'ProductAPI.API.Controllers.v1.ProductsController.GetAll (API)'
+2026-05-18 18:10:50.692 +05:30 [INF] Route matched with {action = "GetAll", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(Int32, Int32, System.Threading.CancellationToken) on controller ProductAPI.API.Controllers.v1.ProductsController (API).
+2026-05-18 18:10:50.718 +05:30 [INF] Fetching products page 1 size 10
+2026-05-18 18:10:50.742 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Product] AS [p]
+2026-05-18 18:10:50.777 +05:30 [INF] Executed DbCommand (8ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedBy], [t].[CreatedOn], [t].[ModifiedBy], [t].[ModifiedOn], [t].[ProductName], [i].[Id], [i].[ProductId], [i].[Quantity]
+FROM (
+    SELECT [p].[Id], [p].[CreatedBy], [p].[CreatedOn], [p].[ModifiedBy], [p].[ModifiedOn], [p].[ProductName]
+    FROM [Product] AS [p]
+    ORDER BY [p].[CreatedOn] DESC
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+LEFT JOIN [Item] AS [i] ON [t].[Id] = [i].[ProductId]
+ORDER BY [t].[CreatedOn] DESC, [t].[Id]
+2026-05-18 18:10:50.790 +05:30 [INF] Executing OkObjectResult, writing value of type 'ProductAPI.Application.Common.ApiResponse`1[[ProductAPI.Application.Common.PagedResult`1[[ProductAPI.Application.DTOs.Products.ProductDto, Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-18 18:10:50.795 +05:30 [INF] Executed action ProductAPI.API.Controllers.v1.ProductsController.GetAll (API) in 95.024ms
+2026-05-18 18:10:50.800 +05:30 [INF] Executed endpoint 'ProductAPI.API.Controllers.v1.ProductsController.GetAll (API)'
+2026-05-18 18:10:50.803 +05:30 [INF] HTTP GET /api/v1/products responded 200 in 147.2740 ms
+2026-05-18 18:10:50.807 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5172/api/v1/products?pageNumber=1&pageSize=10 - 200 null application/json; charset=utf-8 160.6594ms
+2026-05-18 18:11:34.422 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5172/api/v1/products - application/json 66
+2026-05-18 18:11:34.434 +05:30 [INF] CORS policy execution successful.
+2026-05-18 18:11:34.439 +05:30 [INF] Executing endpoint 'ProductAPI.API.Controllers.v1.ProductsController.Create (API)'
+2026-05-18 18:11:34.447 +05:30 [INF] Route matched with {action = "Create", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(ProductAPI.Application.DTOs.Products.CreateProductDto, System.Threading.CancellationToken) on controller ProductAPI.API.Controllers.v1.ProductsController (API).
+2026-05-18 18:11:34.471 +05:30 [INF] Creating product 'realme Pro' by john@test.com
+2026-05-18 18:11:34.522 +05:30 [INF] Executed DbCommand (10ms) [Parameters=[@p0='?' (Size = 100), @p1='?' (DbType = DateTime2), @p2='?' (Size = 100), @p3='?' (DbType = DateTime2), @p4='?' (Size = 255)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Product] ([CreatedBy], [CreatedOn], [ModifiedBy], [ModifiedOn], [ProductName])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2026-05-18 18:11:34.534 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[@p5='?' (DbType = Int32), @p6='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Item] ([ProductId], [Quantity])
+OUTPUT INSERTED.[Id]
+VALUES (@p5, @p6);
+2026-05-18 18:11:34.545 +05:30 [INF] Executing CreatedAtActionResult, writing value of type 'ProductAPI.Application.Common.ApiResponse`1[[ProductAPI.Application.DTOs.Products.ProductDto, Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-18 18:11:34.557 +05:30 [INF] Executed action ProductAPI.API.Controllers.v1.ProductsController.Create (API) in 102.5856ms
+2026-05-18 18:11:34.561 +05:30 [INF] Executed endpoint 'ProductAPI.API.Controllers.v1.ProductsController.Create (API)'
+2026-05-18 18:11:34.566 +05:30 [INF] HTTP POST /api/v1/products responded 201 in 131.3207 ms
+2026-05-18 18:11:34.571 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5172/api/v1/products - 201 null application/json; charset=utf-8 149.1406ms
+2026-05-18 18:13:27.263 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5172/api/v1/products?pageNumber=1&pageSize=10 - null null
+2026-05-18 18:13:27.286 +05:30 [INF] Executing endpoint 'ProductAPI.API.Controllers.v1.ProductsController.GetAll (API)'
+2026-05-18 18:13:27.290 +05:30 [INF] Route matched with {action = "GetAll", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(Int32, Int32, System.Threading.CancellationToken) on controller ProductAPI.API.Controllers.v1.ProductsController (API).
+2026-05-18 18:13:27.304 +05:30 [INF] Fetching products page 1 size 10
+2026-05-18 18:13:27.321 +05:30 [INF] Executed DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Product] AS [p]
+2026-05-18 18:13:27.342 +05:30 [INF] Executed DbCommand (12ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedBy], [t].[CreatedOn], [t].[ModifiedBy], [t].[ModifiedOn], [t].[ProductName], [i].[Id], [i].[ProductId], [i].[Quantity]
+FROM (
+    SELECT [p].[Id], [p].[CreatedBy], [p].[CreatedOn], [p].[ModifiedBy], [p].[ModifiedOn], [p].[ProductName]
+    FROM [Product] AS [p]
+    ORDER BY [p].[CreatedOn] DESC
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+LEFT JOIN [Item] AS [i] ON [t].[Id] = [i].[ProductId]
+ORDER BY [t].[CreatedOn] DESC, [t].[Id]
+2026-05-18 18:13:27.363 +05:30 [INF] Executing OkObjectResult, writing value of type 'ProductAPI.Application.Common.ApiResponse`1[[ProductAPI.Application.Common.PagedResult`1[[ProductAPI.Application.DTOs.Products.ProductDto, Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-18 18:13:27.371 +05:30 [INF] Executed action ProductAPI.API.Controllers.v1.ProductsController.GetAll (API) in 74.0482ms
+2026-05-18 18:13:27.377 +05:30 [INF] Executed endpoint 'ProductAPI.API.Controllers.v1.ProductsController.GetAll (API)'
+2026-05-18 18:13:27.380 +05:30 [INF] HTTP GET /api/v1/products responded 200 in 95.8098 ms
+2026-05-18 18:13:27.387 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5172/api/v1/products?pageNumber=1&pageSize=10 - 200 null application/json; charset=utf-8 124.0176ms
+2026-05-18 18:15:00.183 +05:30 [INF] Request starting HTTP/1.1 PUT http://localhost:5172/api/v1/products/1 - application/json 29
+2026-05-18 18:15:00.201 +05:30 [INF] CORS policy execution successful.
+2026-05-18 18:15:00.204 +05:30 [INF] Executing endpoint 'ProductAPI.API.Controllers.v1.ProductsController.Update (API)'
+2026-05-18 18:15:00.264 +05:30 [INF] Route matched with {action = "Update", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(Int32, ProductAPI.Application.DTOs.Products.UpdateProductDto, System.Threading.CancellationToken) on controller ProductAPI.API.Controllers.v1.ProductsController (API).
+2026-05-18 18:15:00.445 +05:30 [INF] Executed DbCommand (23ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedBy], [t].[CreatedOn], [t].[ModifiedBy], [t].[ModifiedOn], [t].[ProductName], [i].[Id], [i].[ProductId], [i].[Quantity]
+FROM (
+    SELECT TOP(1) [p].[Id], [p].[CreatedBy], [p].[CreatedOn], [p].[ModifiedBy], [p].[ModifiedOn], [p].[ProductName]
+    FROM [Product] AS [p]
+    WHERE [p].[Id] = @__id_0
+) AS [t]
+LEFT JOIN [Item] AS [i] ON [t].[Id] = [i].[ProductId]
+ORDER BY [t].[Id]
+2026-05-18 18:15:00.524 +05:30 [INF] Executed DbCommand (19ms) [Parameters=[@p5='?' (DbType = Int32), @p0='?' (Size = 100), @p1='?' (DbType = DateTime2), @p2='?' (Size = 100), @p3='?' (DbType = DateTime2), @p4='?' (Size = 255)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Product] SET [CreatedBy] = @p0, [CreatedOn] = @p1, [ModifiedBy] = @p2, [ModifiedOn] = @p3, [ProductName] = @p4
+OUTPUT 1
+WHERE [Id] = @p5;
+2026-05-18 18:15:00.544 +05:30 [INF] Executing OkObjectResult, writing value of type 'ProductAPI.Application.Common.ApiResponse`1[[ProductAPI.Application.DTOs.Products.ProductDto, Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-18 18:15:00.555 +05:30 [INF] Executed action ProductAPI.API.Controllers.v1.ProductsController.Update (API) in 283.2842ms
+2026-05-18 18:15:00.559 +05:30 [INF] Executed endpoint 'ProductAPI.API.Controllers.v1.ProductsController.Update (API)'
+2026-05-18 18:15:00.562 +05:30 [INF] HTTP PUT /api/v1/products/1 responded 200 in 361.4740 ms
+2026-05-18 18:15:00.573 +05:30 [INF] Request finished HTTP/1.1 PUT http://localhost:5172/api/v1/products/1 - 200 null application/json; charset=utf-8 389.6188ms
+2026-05-18 18:15:17.695 +05:30 [INF] Request starting HTTP/1.1 DELETE http://localhost:5172/api/v1/products/2 - null null
+2026-05-18 18:15:17.706 +05:30 [INF] CORS policy execution successful.
+2026-05-18 18:15:17.712 +05:30 [INF] Executing endpoint 'ProductAPI.API.Controllers.v1.ProductsController.Delete (API)'
+2026-05-18 18:15:17.738 +05:30 [INF] Route matched with {action = "Delete", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Delete(Int32, System.Threading.CancellationToken) on controller ProductAPI.API.Controllers.v1.ProductsController (API).
+2026-05-18 18:15:17.750 +05:30 [INF] Deleting product 2
+2026-05-18 18:15:17.771 +05:30 [INF] Executed DbCommand (15ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedBy], [t].[CreatedOn], [t].[ModifiedBy], [t].[ModifiedOn], [t].[ProductName], [i].[Id], [i].[ProductId], [i].[Quantity]
+FROM (
+    SELECT TOP(1) [p].[Id], [p].[CreatedBy], [p].[CreatedOn], [p].[ModifiedBy], [p].[ModifiedOn], [p].[ProductName]
+    FROM [Product] AS [p]
+    WHERE [p].[Id] = @__id_0
+) AS [t]
+LEFT JOIN [Item] AS [i] ON [t].[Id] = [i].[ProductId]
+ORDER BY [t].[Id]
+2026-05-18 18:15:17.848 +05:30 [INF] Executed DbCommand (29ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [Item]
+OUTPUT 1
+WHERE [Id] = @p0;
+DELETE FROM [Product]
+OUTPUT 1
+WHERE [Id] = @p1;
+2026-05-18 18:15:17.884 +05:30 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2026-05-18 18:15:17.887 +05:30 [INF] Executed action ProductAPI.API.Controllers.v1.ProductsController.Delete (API) in 143.9842ms
+2026-05-18 18:15:17.891 +05:30 [INF] Executed endpoint 'ProductAPI.API.Controllers.v1.ProductsController.Delete (API)'
+2026-05-18 18:15:17.893 +05:30 [INF] HTTP DELETE /api/v1/products/2 responded 204 in 187.3037 ms
+2026-05-18 18:15:17.900 +05:30 [INF] Request finished HTTP/1.1 DELETE http://localhost:5172/api/v1/products/2 - 204 null null 204.5125ms
+2026-05-18 18:15:50.913 +05:30 [INF] Request starting HTTP/1.1 DELETE http://localhost:5172/api/v1/products/2 - null null
+2026-05-18 18:15:50.925 +05:30 [INF] CORS policy execution successful.
+2026-05-18 18:15:50.927 +05:30 [INF] Executing endpoint 'ProductAPI.API.Controllers.v1.ProductsController.Delete (API)'
+2026-05-18 18:15:50.967 +05:30 [INF] Route matched with {action = "Delete", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Delete(Int32, System.Threading.CancellationToken) on controller ProductAPI.API.Controllers.v1.ProductsController (API).
+2026-05-18 18:15:50.975 +05:30 [INF] Deleting product 2
+2026-05-18 18:15:50.990 +05:30 [INF] Executed DbCommand (13ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedBy], [t].[CreatedOn], [t].[ModifiedBy], [t].[ModifiedOn], [t].[ProductName], [i].[Id], [i].[ProductId], [i].[Quantity]
+FROM (
+    SELECT TOP(1) [p].[Id], [p].[CreatedBy], [p].[CreatedOn], [p].[ModifiedBy], [p].[ModifiedOn], [p].[ProductName]
+    FROM [Product] AS [p]
+    WHERE [p].[Id] = @__id_0
+) AS [t]
+LEFT JOIN [Item] AS [i] ON [t].[Id] = [i].[ProductId]
+ORDER BY [t].[Id]
+2026-05-18 18:15:50.995 +05:30 [INF] Executed action ProductAPI.API.Controllers.v1.ProductsController.Delete (API) in 22.4649ms
+2026-05-18 18:15:50.997 +05:30 [INF] Executed endpoint 'ProductAPI.API.Controllers.v1.ProductsController.Delete (API)'
+2026-05-18 18:15:51.003 +05:30 [ERR] HTTP DELETE /api/v1/products/2 responded 500 in 78.0443 ms
+ProductAPI.Domain.Exceptions.NotFoundException: Product with key '2' was not found.
+   at ProductAPI.Application.Services.ProductService.DeleteProductAsync(Int32 id, CancellationToken cancellationToken) in C:\Users\DISHANT\Downloads\Root\ProductAPI\src\Application\Services\ProductService.cs:line 73
+   at ProductAPI.API.Controllers.v1.ProductsController.Delete(Int32 id, CancellationToken cancellationToken) in C:\Users\DISHANT\Downloads\Root\ProductAPI\src\API\Controllers\v1\ProductsController.cs:line 101
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.ResponseCompression.ResponseCompressionMiddleware.InvokeCore(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-05-18 18:15:51.764 +05:30 [WRN] Resource not found: Product with key '2' was not found.
+2026-05-18 18:15:51.769 +05:30 [INF] Request finished HTTP/1.1 DELETE http://localhost:5172/api/v1/products/2 - 404 null application/json; charset=utf-8 856.5339ms
+2026-05-18 18:16:02.337 +05:30 [INF] Request starting HTTP/1.1 DELETE http://localhost:5172/api/v1/products/1 - null null
+2026-05-18 18:16:02.345 +05:30 [INF] CORS policy execution successful.
+2026-05-18 18:16:02.352 +05:30 [INF] Executing endpoint 'ProductAPI.API.Controllers.v1.ProductsController.Delete (API)'
+2026-05-18 18:16:02.361 +05:30 [INF] Route matched with {action = "Delete", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Delete(Int32, System.Threading.CancellationToken) on controller ProductAPI.API.Controllers.v1.ProductsController (API).
+2026-05-18 18:16:02.372 +05:30 [INF] Deleting product 1
+2026-05-18 18:16:02.405 +05:30 [INF] Executed DbCommand (16ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedBy], [t].[CreatedOn], [t].[ModifiedBy], [t].[ModifiedOn], [t].[ProductName], [i].[Id], [i].[ProductId], [i].[Quantity]
+FROM (
+    SELECT TOP(1) [p].[Id], [p].[CreatedBy], [p].[CreatedOn], [p].[ModifiedBy], [p].[ModifiedOn], [p].[ProductName]
+    FROM [Product] AS [p]
+    WHERE [p].[Id] = @__id_0
+) AS [t]
+LEFT JOIN [Item] AS [i] ON [t].[Id] = [i].[ProductId]
+ORDER BY [t].[Id]
+2026-05-18 18:16:02.436 +05:30 [INF] Executed DbCommand (12ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [Item]
+OUTPUT 1
+WHERE [Id] = @p0;
+DELETE FROM [Product]
+OUTPUT 1
+WHERE [Id] = @p1;
+2026-05-18 18:16:02.442 +05:30 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2026-05-18 18:16:02.444 +05:30 [INF] Executed action ProductAPI.API.Controllers.v1.ProductsController.Delete (API) in 74.8063ms
+2026-05-18 18:16:02.447 +05:30 [INF] Executed endpoint 'ProductAPI.API.Controllers.v1.ProductsController.Delete (API)'
+2026-05-18 18:16:02.451 +05:30 [INF] HTTP DELETE /api/v1/products/1 responded 204 in 105.6139 ms
+2026-05-18 18:16:02.456 +05:30 [INF] Request finished HTTP/1.1 DELETE http://localhost:5172/api/v1/products/1 - 204 null null 118.5627ms
+2026-05-18 18:17:02.037 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5172/api/v1/products?pageNumber=1&pageSize=10 - null null
+2026-05-18 18:17:02.049 +05:30 [INF] Executing endpoint 'ProductAPI.API.Controllers.v1.ProductsController.GetAll (API)'
+2026-05-18 18:17:02.052 +05:30 [INF] Route matched with {action = "GetAll", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(Int32, Int32, System.Threading.CancellationToken) on controller ProductAPI.API.Controllers.v1.ProductsController (API).
+2026-05-18 18:17:02.107 +05:30 [INF] Fetching products page 1 size 10
+2026-05-18 18:17:02.121 +05:30 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Product] AS [p]
+2026-05-18 18:17:02.130 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedBy], [t].[CreatedOn], [t].[ModifiedBy], [t].[ModifiedOn], [t].[ProductName], [i].[Id], [i].[ProductId], [i].[Quantity]
+FROM (
+    SELECT [p].[Id], [p].[CreatedBy], [p].[CreatedOn], [p].[ModifiedBy], [p].[ModifiedOn], [p].[ProductName]
+    FROM [Product] AS [p]
+    ORDER BY [p].[CreatedOn] DESC
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+LEFT JOIN [Item] AS [i] ON [t].[Id] = [i].[ProductId]
+ORDER BY [t].[CreatedOn] DESC, [t].[Id]
+2026-05-18 18:17:02.139 +05:30 [INF] Executing OkObjectResult, writing value of type 'ProductAPI.Application.Common.ApiResponse`1[[ProductAPI.Application.Common.PagedResult`1[[ProductAPI.Application.DTOs.Products.ProductDto, Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-18 18:17:02.143 +05:30 [INF] Executed action ProductAPI.API.Controllers.v1.ProductsController.GetAll (API) in 38.1484ms
+2026-05-18 18:17:02.150 +05:30 [INF] Executed endpoint 'ProductAPI.API.Controllers.v1.ProductsController.GetAll (API)'
+2026-05-18 18:17:02.153 +05:30 [INF] HTTP GET /api/v1/products responded 200 in 106.2854 ms
+2026-05-18 18:17:02.158 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5172/api/v1/products?pageNumber=1&pageSize=10 - 200 null application/json; charset=utf-8 120.2269ms
+2026-05-18 18:17:18.997 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5172/api/v1/products - application/json 66
+2026-05-18 18:17:19.068 +05:30 [INF] CORS policy execution successful.
+2026-05-18 18:17:19.077 +05:30 [INF] Executing endpoint 'ProductAPI.API.Controllers.v1.ProductsController.Create (API)'
+2026-05-18 18:17:19.084 +05:30 [INF] Route matched with {action = "Create", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(ProductAPI.Application.DTOs.Products.CreateProductDto, System.Threading.CancellationToken) on controller ProductAPI.API.Controllers.v1.ProductsController (API).
+2026-05-18 18:17:19.093 +05:30 [INF] Creating product 'realme Pro' by john@test.com
+2026-05-18 18:17:19.103 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[@p0='?' (Size = 100), @p1='?' (DbType = DateTime2), @p2='?' (Size = 100), @p3='?' (DbType = DateTime2), @p4='?' (Size = 255)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Product] ([CreatedBy], [CreatedOn], [ModifiedBy], [ModifiedOn], [ProductName])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2026-05-18 18:17:19.109 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@p5='?' (DbType = Int32), @p6='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Item] ([ProductId], [Quantity])
+OUTPUT INSERTED.[Id]
+VALUES (@p5, @p6);
+2026-05-18 18:17:19.112 +05:30 [INF] Executing CreatedAtActionResult, writing value of type 'ProductAPI.Application.Common.ApiResponse`1[[ProductAPI.Application.DTOs.Products.ProductDto, Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-18 18:17:19.113 +05:30 [INF] Executed action ProductAPI.API.Controllers.v1.ProductsController.Create (API) in 25.0313ms
+2026-05-18 18:17:19.116 +05:30 [INF] Executed endpoint 'ProductAPI.API.Controllers.v1.ProductsController.Create (API)'
+2026-05-18 18:17:19.117 +05:30 [INF] HTTP POST /api/v1/products responded 201 in 48.9241 ms
+2026-05-18 18:17:19.119 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5172/api/v1/products - 201 null application/json; charset=utf-8 121.9382ms
+2026-05-18 18:17:34.543 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5172/api/v1/products - application/json 66
+2026-05-18 18:17:34.552 +05:30 [INF] CORS policy execution successful.
+2026-05-18 18:17:34.554 +05:30 [INF] Executing endpoint 'ProductAPI.API.Controllers.v1.ProductsController.Create (API)'
+2026-05-18 18:17:34.556 +05:30 [INF] Route matched with {action = "Create", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(ProductAPI.Application.DTOs.Products.CreateProductDto, System.Threading.CancellationToken) on controller ProductAPI.API.Controllers.v1.ProductsController (API).
+2026-05-18 18:17:34.628 +05:30 [INF] Creating product 'Widget Pro' by john@test.com
+2026-05-18 18:17:34.637 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (Size = 100), @p1='?' (DbType = DateTime2), @p2='?' (Size = 100), @p3='?' (DbType = DateTime2), @p4='?' (Size = 255)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Product] ([CreatedBy], [CreatedOn], [ModifiedBy], [ModifiedOn], [ProductName])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2026-05-18 18:17:34.644 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@p5='?' (DbType = Int32), @p6='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Item] ([ProductId], [Quantity])
+OUTPUT INSERTED.[Id]
+VALUES (@p5, @p6);
+2026-05-18 18:17:34.654 +05:30 [INF] Executing CreatedAtActionResult, writing value of type 'ProductAPI.Application.Common.ApiResponse`1[[ProductAPI.Application.DTOs.Products.ProductDto, Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-18 18:17:34.660 +05:30 [INF] Executed action ProductAPI.API.Controllers.v1.ProductsController.Create (API) in 34.3408ms
+2026-05-18 18:17:34.670 +05:30 [INF] Executed endpoint 'ProductAPI.API.Controllers.v1.ProductsController.Create (API)'
+2026-05-18 18:17:34.671 +05:30 [INF] HTTP POST /api/v1/products responded 201 in 119.6288 ms
+2026-05-18 18:17:34.673 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5172/api/v1/products - 201 null application/json; charset=utf-8 130.3584ms
+2026-05-18 18:17:46.441 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5172/api/v1/products?pageNumber=1&pageSize=10 - null null
+2026-05-18 18:17:46.451 +05:30 [INF] Executing endpoint 'ProductAPI.API.Controllers.v1.ProductsController.GetAll (API)'
+2026-05-18 18:17:46.454 +05:30 [INF] Route matched with {action = "GetAll", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(Int32, Int32, System.Threading.CancellationToken) on controller ProductAPI.API.Controllers.v1.ProductsController (API).
+2026-05-18 18:17:46.458 +05:30 [INF] Fetching products page 1 size 10
+2026-05-18 18:17:46.506 +05:30 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Product] AS [p]
+2026-05-18 18:17:46.514 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedBy], [t].[CreatedOn], [t].[ModifiedBy], [t].[ModifiedOn], [t].[ProductName], [i].[Id], [i].[ProductId], [i].[Quantity]
+FROM (
+    SELECT [p].[Id], [p].[CreatedBy], [p].[CreatedOn], [p].[ModifiedBy], [p].[ModifiedOn], [p].[ProductName]
+    FROM [Product] AS [p]
+    ORDER BY [p].[CreatedOn] DESC
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+LEFT JOIN [Item] AS [i] ON [t].[Id] = [i].[ProductId]
+ORDER BY [t].[CreatedOn] DESC, [t].[Id]
+2026-05-18 18:17:46.520 +05:30 [INF] Executing OkObjectResult, writing value of type 'ProductAPI.Application.Common.ApiResponse`1[[ProductAPI.Application.Common.PagedResult`1[[ProductAPI.Application.DTOs.Products.ProductDto, Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-18 18:17:46.521 +05:30 [INF] Executed action ProductAPI.API.Controllers.v1.ProductsController.GetAll (API) in 65.4767ms
+2026-05-18 18:17:46.523 +05:30 [INF] Executed endpoint 'ProductAPI.API.Controllers.v1.ProductsController.GetAll (API)'
+2026-05-18 18:17:46.524 +05:30 [INF] HTTP GET /api/v1/products responded 200 in 74.2282 ms
+2026-05-18 18:17:46.526 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5172/api/v1/products?pageNumber=1&pageSize=10 - 200 null application/json; charset=utf-8 85.3495ms
+2026-05-18 18:17:58.155 +05:30 [INF] Request starting HTTP/1.1 DELETE http://localhost:5172/api/v1/products/3 - null null
+2026-05-18 18:17:58.162 +05:30 [INF] CORS policy execution successful.
+2026-05-18 18:17:58.164 +05:30 [INF] Executing endpoint 'ProductAPI.API.Controllers.v1.ProductsController.Delete (API)'
+2026-05-18 18:17:58.166 +05:30 [INF] Route matched with {action = "Delete", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Delete(Int32, System.Threading.CancellationToken) on controller ProductAPI.API.Controllers.v1.ProductsController (API).
+2026-05-18 18:17:58.169 +05:30 [INF] Deleting product 3
+2026-05-18 18:17:58.177 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedBy], [t].[CreatedOn], [t].[ModifiedBy], [t].[ModifiedOn], [t].[ProductName], [i].[Id], [i].[ProductId], [i].[Quantity]
+FROM (
+    SELECT TOP(1) [p].[Id], [p].[CreatedBy], [p].[CreatedOn], [p].[ModifiedBy], [p].[ModifiedOn], [p].[ProductName]
+    FROM [Product] AS [p]
+    WHERE [p].[Id] = @__id_0
+) AS [t]
+LEFT JOIN [Item] AS [i] ON [t].[Id] = [i].[ProductId]
+ORDER BY [t].[Id]
+2026-05-18 18:17:58.193 +05:30 [INF] Executed DbCommand (10ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [Item]
+OUTPUT 1
+WHERE [Id] = @p0;
+DELETE FROM [Product]
+OUTPUT 1
+WHERE [Id] = @p1;
+2026-05-18 18:17:58.197 +05:30 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2026-05-18 18:17:58.199 +05:30 [INF] Executed action ProductAPI.API.Controllers.v1.ProductsController.Delete (API) in 30.8705ms
+2026-05-18 18:17:58.201 +05:30 [INF] Executed endpoint 'ProductAPI.API.Controllers.v1.ProductsController.Delete (API)'
+2026-05-18 18:17:58.202 +05:30 [INF] HTTP DELETE /api/v1/products/3 responded 204 in 40.0419 ms
+2026-05-18 18:17:58.205 +05:30 [INF] Request finished HTTP/1.1 DELETE http://localhost:5172/api/v1/products/3 - 204 null null 49.176ms
+2026-05-18 18:21:31.243 +05:30 [INF] Application is shutting down...
